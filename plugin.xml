@@ -39,12 +39,11 @@
     <config-file parent="/*" target="app/src/main/AndroidManifest.xml">
       <uses-permission android:name="android.permission.CAMERA"/>
       <uses-permission android:name="android.permission.FLASHLIGHT"/>
-      <uses-feature android:name="android.hardware.camera.autofocus" />
       <uses-feature android:name="android.hardware.camera" android:required="true"/>
     </config-file>
     <framework src="src/android/barcodescanner.gradle" custom="true" type="gradleReference"/>
     <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
-    <lib-file src="src/android/barcodescanner-release-2.1.7.aar"/>
+    <lib-file src="src/android/barcodescanner-release-2.1.5.aar"/>
     <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
   </platform>
   <platform name="browser">
