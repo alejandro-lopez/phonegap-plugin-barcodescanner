@@ -36,7 +36,7 @@
       <activity android:name="com.google.zxing.client.android.CaptureActivity" android:clearTaskOnLaunch="true" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden" android:exported="false"/>
       <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:label="Share"/>
     </config-file>
-    <config-file target="AndroidManifest.xml" parent="/manifest">
+    <config-file parent="/*" target="app/src/main/AndroidManifest.xml">
       <uses-permission android:name="android.permission.CAMERA"/>
       <uses-permission android:name="android.permission.FLASHLIGHT"/>
       <uses-feature android:name="android.hardware.camera.autofocus" />
